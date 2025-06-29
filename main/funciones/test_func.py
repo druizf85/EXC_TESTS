@@ -14,11 +14,12 @@ def create_dataframe_sql(connection, data, data_name):
 # Modificar esta función
 def excecute_query_tables(connection):
     query_tables = """
-    SELECT name 
-    FROM sqlite_master 
-    WHERE type = 'table'
+    SELECT table_name
+    FROM INFORMATION_SCHEMA.TABLES
+    WHERE table_catalog = 'postgres' AND table_schema = 'public'
+    ORDER BY table_name
     """
-    result = pd.read_sql(query_tables,connection)['name'].tolist()
+    result = pd.read_sql(query_tables,connection)['table_name'].tolist()
     return result
 
 # ----------------------------------------------------------------------------------------------------------------------- #
@@ -34,6 +35,6 @@ def create_df_variable(tables, connection):
 # Modificar esta función
 def excecute_query(query, connection):
     result = pd.read_sql(query, connection)
-    return print(result)
+    return result
 
 # ----------------------------------------------------------------------------------------------------------------------- #
