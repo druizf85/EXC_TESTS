@@ -5,13 +5,13 @@ import pandas as pd
 def create_dataframe_sql(connection, data, data_name):
     dataframe = pd.DataFrame(data)
     try:
-        dataframe.to_sql(data_name,connection, index=False, if_exists='replace')
+        dataframe.to_sql(data_name, connection, index=False, if_exists='replace')
         return print(f'Dataframe "{data_name}" creada exitosamente.')
     except Exception as e:
         print(F'Error creando la dataframe: {e}.')
         
 # ----------------------------------------------------------------------------------------------------------------------- #
-# Modificar esta función
+
 def excecute_query_tables(connection):
     query_tables = """
     SELECT table_name
@@ -19,11 +19,11 @@ def excecute_query_tables(connection):
     WHERE table_catalog = 'postgres' AND table_schema = 'public'
     ORDER BY table_name
     """
-    result = pd.read_sql(query_tables,connection)['table_name'].tolist()
-    return result
+    tables = pd.read_sql(query_tables, connection)['table_name'].tolist()
+    return tables
 
 # ----------------------------------------------------------------------------------------------------------------------- #
-# Modificar esta función
+
 def create_df_variable(tables, connection):
     dataframes = {}
     for table_name in tables:
@@ -32,7 +32,7 @@ def create_df_variable(tables, connection):
     return dataframes
 
 # ----------------------------------------------------------------------------------------------------------------------- #
-# Modificar esta función
+
 def excecute_query(query, connection):
     result = pd.read_sql(query, connection)
     return result
