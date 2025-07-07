@@ -1,4 +1,4 @@
-🧠 SQL & Python Data Analysis Challenges — Formulado por ChatGPT
+ir🧠 SQL & Python Data Analysis Challenges — Formulado por ChatGPT
 
 Este repositorio contiene una serie de ejercicios de análisis de datos formulados con la asistencia de ChatGPT. 
 
@@ -16,7 +16,7 @@ Los ejercicios 1 al 3 utilizan tres datasets principales relacionados con transa
 - customers: Lista básica de clientes, sus características demográficas y fecha de registro.
 - products: Información de productos digitales o servicios ofrecidos.
 
-En el ejercicio 4 se aumenta un poco la dificultad, se relacionan algunos datasets relacionados con citas médicas, resultados de tratamientos, efectividad del tratamiento y efectividad por médico, con múltiples tablas relacionadas como:
+En el ejercicio 4 se aumenta un poco la complejidad, se muestran algunos datasets relacionados con citas médicas, resultados de tratamientos, efectividad del tratamiento y efectividad por médico, con múltiples tablas relacionadas como:
 - patients: Pacientes tratados.
 - appointments: Citas por paciente, inluyendo información de paciente y médico que lo trató.
 - treatments: Tratamientos por paciente y fechas de inicio y fin.
