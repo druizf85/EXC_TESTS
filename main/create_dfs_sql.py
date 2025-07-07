@@ -1,4 +1,3 @@
-# import sqlite3
 import pandas as pd
 import funciones.test_func as tf
 
@@ -8,11 +7,11 @@ from sqlalchemy import create_engine
 
 load_dotenv()
 
-host=os.getenv("DB_HOST2")
-port=os.getenv("DB_PORT2")
-database=os.getenv("DB_NAME2")
-user=os.getenv("DB_USER2")
-password=os.getenv("DB_PASS2")
+host = os.getenv("DB_HOST2")
+port = os.getenv("DB_PORT2")
+database = os.getenv("DB_NAME2")
+user = os.getenv("DB_USER2")
+password = os.getenv("DB_PASS2")
 
 data_transactions = pd.DataFrame({
     'transaction_id': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
@@ -45,13 +44,10 @@ data_products = pd.DataFrame({
 })
 data_name_prod = 'products'
 
-# engine= sqlite3.connect('mi_base.db') 
-
 engine = create_engine(f'postgresql+psycopg2://{user}:{password}@{host}:{port}/{database}')
 
 tf.create_dataframe_sql(engine, data_transactions, data_name_trans)
 tf.create_dataframe_sql(engine, data_customers, data_name_cust)
 tf.create_dataframe_sql(engine, data_products, data_name_prod)
 
-print("Base de datos creada y tablas cargadas.")
-# engine.close()
+print("Tablas cargadas en base de datos.")
