@@ -12,9 +12,9 @@ Para cada uno de estos ejercicios se crearon tablas en un entorno local de Postg
 
 Los ejercicios 1 al 3 utilizan tres datasets principales relacionados con transacciones digitales, clientes y productos.
 
-transactions: Contiene los registros de transacciones realizadas por los clientes.
-customers: Lista básica de clientes, sus características demográficas y fecha de registro.
-products: Información de productos digitales o servicios ofrecidos.
+- transactions: Contiene los registros de transacciones realizadas por los clientes.
+- customers: Lista básica de clientes, sus características demográficas y fecha de registro.
+- products: Información de productos digitales o servicios ofrecidos.
 
 En el ejercicio 4 se aumenta un poco la dificultad, se relacionan algunos datasets relacionados con citas médicas, resultados de tratamientos, efectividad del tratamiento y efectividad por médico, con múltiples tablas relacionadas como:
 - patients: Pacientes tratados.
