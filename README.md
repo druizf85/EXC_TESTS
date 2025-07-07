@@ -1,4 +1,4 @@
-ir🧠 SQL & Python Data Analysis Challenges — Formulado por ChatGPT
+🧠 SQL & Python Data Analysis Challenges — Formulado por ChatGPT
 
 Este repositorio contiene una serie de ejercicios de análisis de datos formulados con la asistencia de ChatGPT. 
 
