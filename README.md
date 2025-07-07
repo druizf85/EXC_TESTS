@@ -1,6 +1,6 @@
 🧠 SQL & Python Data Analysis Challenges — Formulado por ChatGPT
 
-Este repositorio contiene una serie de ejercicios de análisis de datos formulados con la asistencia de ChatGPT. 
+Este repositorio contiene una serie de ejercicios (en inglés) de análisis de datos formulados con la asistencia de ChatGPT para uso práctico. 
 
 El objetivo principal es fortalecer habilidades intermedias en SQL y Python (pandas), trabajando con datasets relacionales.
 
@@ -25,7 +25,10 @@ En el ejercicio 4 se aumenta un poco la complejidad, se muestran algunos dataset
 El detalle de cada uno de los ejercicios se encuentra en cada uno de los documentos .ipynb
 
 🚀 Cómo correr los ejemplos:
-- Crear una base de datos PostgreSQL local.
-- Cargar los datasets usando el script de conexión (incluye create_dataframe_sql()).
+
+- Clonar el repositorio con el comando git clone git@github.com:druizf85/sql-python-practical-challenges.git
+- Crear una base de datos PostgreSQL local, importante configurar lo establecido en requirements.txt para lograr la conexión en PostgreSQL con Python.
+- Cargar los datasets usando los script de conexión "create_dfs_sql" y "create_dfs_sql_2" (es sólo ejecutarlo y creará las tablas en la base de datos con la función create_dataframe_sql()).
 - Ejecutar cada notebook según el desafío correspondiente (exc_1.ipynb, exc_2.ipynb, etc.).
 - Alternativamente, resolver los desafíos directamente en Python/pandas.
+- Si gustas compara con mis respuestas en la carpeta "mis_soluciones", allí también están las queries que se corrieron directamente en el motor de la base de datos.
