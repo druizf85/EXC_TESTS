@@ -26,7 +26,7 @@ El detalle de cada uno de los ejercicios se encuentra en cada uno de los documen
 
 🚀 Cómo correr los ejemplos:
 
-- Clonar el repositorio con el comando git clone git@github.com:druizf85/sql-python-practical-challenges.git
+- Clonar el repositorio con el comando git clone https://github.com/druizf85/sql-python-practical-challenges.git
 - Crear una base de datos PostgreSQL local, importante configurar lo establecido en requirements.txt para lograr la conexión en PostgreSQL con Python.
 - Cargar los datasets usando los script de conexión "create_dfs_sql" y "create_dfs_sql_2" (es sólo ejecutarlo y creará las tablas en la base de datos con la función create_dataframe_sql()).
 - Ejecutar cada notebook según el desafío correspondiente (exc_1.ipynb, exc_2.ipynb, etc.).
