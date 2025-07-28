@@ -66,8 +66,8 @@ treatments_data = pd.DataFrame(
 {
     'treatment_id': list(range(201, 213)),
     'patient_id': [1, 2, 5, 4, 6, 7, 8, 9, 10, 11, 12, 13],
-    'illness': ['Hypertension', 'Stroke', 'Cancer', 'Migraine', 'Eczema', 'Diabetes',
-                'Leukemia', 'Acne', 'Arrhythmia', 'Asthma', 'Epilepsy', 'Melanoma'],
+    'illness': ['Hypertension', 'Hypertension', 'Cancer', 'Migraine', 'Cancer', 'Diabetes',
+                'Leukemia', 'Cancer', 'Diabetes', 'Asthma', 'Hypertension', 'Cancer'],
     'start_date': ['2023-05-10', '2023-05-15', '2023-07-05', '2023-06-22',
                    '2023-09-01', '2023-09-10', '2023-09-12', '2023-10-01',
                    '2023-10-15', '2023-10-20', '2023-11-20', '2023-11-22'],
@@ -75,8 +75,8 @@ treatments_data = pd.DataFrame(
                  '2023-10-01', '2023-11-15', '2023-12-20', '2023-11-01',
                  '2023-11-15', '2023-12-01', '2023-12-30', '2024-01-22'],
     'outcome': ['Recovered', 'Recovered', 'Deceased', 'Recovered',
-                'Recovered', 'Ongoing', 'Ongoing', 'Recovered',
-                'Recovered', 'Recovered', 'Ongoing', 'Ongoing']
+                'Deceased', 'Ongoing', 'Ongoing', 'Deceased',
+                'Recovered', 'Recovered', 'Ongoing', 'Deceased']
 }
 )
 
